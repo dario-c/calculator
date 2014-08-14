@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :calculatos
 
   # You can have the root of your site routed with "root"
-  root 'calculato#index'
+  root 'calculato#new'
+
+  get 'get_price' => 'calculato#create'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
