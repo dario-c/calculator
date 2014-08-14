@@ -1,8 +1,8 @@
 <%= form_tag("/get_price", method: "get") do %>
   <%= label_tag(:quantity, "Quantity:") %>
-  <%= text_field_tag(:quantity) %>
+  <%= text_field_tag(:quantity) %><br>
    <%= label_tag(:price, "Price") %>
-  <%= text_field_tag(:price) %>
+  <%= text_field_tag(:price) %><br>
   <%= label_tag(:country_code, "Country Code") %>
   <%= text_field_tag(:country_code) %>
   <%= submit_tag("Save") %>

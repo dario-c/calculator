@@ -25,7 +25,7 @@ DISCOUNT = {
 	def create
 		@quantity = params[:quantity].to_i
 		@price = (params[:price]).to_i
-		@country_code = params[:country_code]
+		@country_code = params[:country_code].downcase
 		@tax_rate = TAX_TABLE[@country_code.to_sym]
 		@subtotal = @quantity*@price
 

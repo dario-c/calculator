@@ -1,8 +1,8 @@
-<p>You ordered <%= @quantity %> pcs</p>
-<p>Each item is EUR <%= @price %></p>
-<p>Your country code is <%= @country_code %></p>
-<p>Your tax rate is <%= @tax_rate %></p>
-<p>Your subtotal before discount is <%= @subtotal %></p>
-<p>Discount rate <%= @discount %></p>
-<p>Your subtotal after discount is <%= @discounted %></p>
-<p>Your final total is <%= @total %></p>
+<p>You ordered <span class="answer"><%= @quantity %> pcs</span></p>
+<p>Each item is <span class="answer">EUR <%= @price %></span></p>
+<p>Your country code is <span class="answer"><%= @country_code %></span></p>
+<p>Your tax rate is <span class="answer"><%= @tax_rate %>%</span></p>
+<p>Your subtotal before discount is <span class="answer"><%= @subtotal %></span></p>
+<p>Discount rate <span class="answer"><%= 1- @discount %>%</span></p>
+<p>Your subtotal after discount is <span class="answer"><%= @discounted %></span></p>
+<p>Your final total is <span class="answer"><%= @total %></span></p>
